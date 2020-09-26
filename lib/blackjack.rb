@@ -48,7 +48,6 @@ def hit?(n)
   if reply == "s"
     return n 
   end
-  binding.pry
   return n
 end
 
