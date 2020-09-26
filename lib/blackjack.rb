@@ -42,7 +42,8 @@ def hit?(n)
     n += deal_card
   elsif reply == "s"
     return n 
-  else 
+  else
+    prompt_user
     invalid_command
     prompt_user
   end
