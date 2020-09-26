@@ -40,11 +40,9 @@ def hit?(n)
   reply = get_user_input
   if reply == "h"
     n += deal_card
-  end
-  if reply == "s"
+  elsif reply == "s"
     return n 
-  end
-  if reply != "h" || "s"
+  else 
     invalid_command
     prompt_user
   end
