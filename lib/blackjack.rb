@@ -40,6 +40,7 @@ def hit?(n)
   reply = get_user_input
   if reply == "h"
     n += deal_card
+    return n
   elsif reply == "s"
     return n 
   else 
