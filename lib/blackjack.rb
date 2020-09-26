@@ -43,7 +43,7 @@ def hit?(n)
   end
   if reply != "h" || "s"
     invalid_command
-    get_user_input
+    prompt_user
   end
   return n
 end
