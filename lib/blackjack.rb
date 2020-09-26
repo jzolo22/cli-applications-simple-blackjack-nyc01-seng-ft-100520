@@ -45,6 +45,9 @@ def hit?(n)
     invalid_command
     prompt_user
   end
+  if reply == "s"
+    return n 
+  end
   binding.pry
   return n
 end
