@@ -50,6 +50,20 @@ def hit?(n)
   n
 end
 
+# def hit?(n)
+#   prompt_user
+#   reply = get_user_input
+#   if reply == "h"
+#     n += deal_card
+#   elsif reply == "s"
+#     return n 
+#   else
+#     prompt_user
+#     invalid_command
+#     get_user_input
+#   end
+#   n
+# end
 
 
 
@@ -60,8 +74,9 @@ end
 def runner
   welcome 
   n = initial_round
-  until hit?(n) > 21
-    display_card_total(hit?(n))
+  while hit?(n) < 21
+    sum = hit?(n)
+    display_card_total(sum)
   end
 final_total = hit?(n)
 end_game(final_total)
