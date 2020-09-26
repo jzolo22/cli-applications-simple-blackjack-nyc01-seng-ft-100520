@@ -41,12 +41,12 @@ def hit?(n)
   if reply == "h"
     n += deal_card
   end
+  if reply == "s"
+    return n 
+  end
   if reply != "h" || "s"
     invalid_command
     prompt_user
-  end
-  if reply == "s"
-    return n 
   end
   return n
 end
