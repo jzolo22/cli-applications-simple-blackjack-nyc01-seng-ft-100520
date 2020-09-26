@@ -58,6 +58,8 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome 
+  n = initial_round
+  hit?(n)
 end
     
